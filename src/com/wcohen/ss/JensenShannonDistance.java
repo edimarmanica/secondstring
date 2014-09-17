@@ -28,7 +28,7 @@ abstract public class JensenShannonDistance extends AbstractTokenizedStringDista
 	{
 		Set seenTokens = new HashSet();
 		while (i.hasNext()) {
-			StringWrapper s = (StringWrapper)i.next();
+			
 			BagOfTokens bag = asBagOfTokens(i.nextStringWrapper());
 			for (Iterator j=bag.tokenIterator(); j.hasNext(); ) {
 				Token tokj = (Token)j.next();
